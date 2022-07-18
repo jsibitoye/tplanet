@@ -1,4 +1,4 @@
 function myfunc(){
-    //alert(" joshua up now");
+    alert(" joshua up now");
 
 }

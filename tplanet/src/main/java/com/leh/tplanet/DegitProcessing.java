@@ -1,6 +1,6 @@
 package com.leh.tplanet;
 
-public class DuplicateRemover {
+public class DegitProcessing {
     private String inputString;
     private String [] inputArray;
 
@@ -13,9 +13,6 @@ public class DuplicateRemover {
     }
 
     public String getUnique() {
-       // inputArray = inputString.split("");
-        return "duplicateRemover{" +
-                "inputString='" + inputString + '\'' +
-                '}';
+        return inputString;
     }
 }

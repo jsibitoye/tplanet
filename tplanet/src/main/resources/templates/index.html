@@ -3,17 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>T Planet Java Spring Assessment App</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-  Welcome to index page you guys
-
+  
 <div class="wrapper">
-    
 
-    this is the first div
-    <input type="button" value="CLick Me" onclick="myfunc()"/>
+    <h1 id ="logo">
+      TechiePlanet
+    </h1>
+    <div class="assess">
+      <h2>
+        Test Link List
+      </h2> 
+      <div>
+        <a th:href="@{/converter}" target="_self"> Time Converter </a>
+      </div>
+
+      <div>
+        <a a th:href="@{/staircase}" target="_self"> Create a Staircase</a>
+      </div>
+      <div>
+          <a a th:href="@{/arrayOfDigits}" target="_self">Duplicate Array Remover</a>
+      </div>
+      <div>
+        <a href="#"> assessment 5</a>
+      </div>
+      <div>
+        <a href="#"> assessment 6</a>
+      </div>
+
+    </div>
 </div>
+  <Footer>
+    <h2> Thank you </h2>
+    <p>some text might be down here to make it look good</p>
+  </Footer>
   <script src="js/script.js"></script>
 </body>
 </body>

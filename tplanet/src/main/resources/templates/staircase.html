@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlsn:th=" https://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Time Converter</title>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-$END$
+
+<div class=" wrapper ladderWrapper">
+
+    <h1 id ="logo">
+        <a th:href="@{/}" target="_self"> TechiePlanet</a>
+    </h1>
+    <div class="assess">
+        <h2>
+            Staircase Generator
+        </h2>
+
+        <form action="/stair" method="post">
+            <div class="timeText" >
+                <pre th:text="${lader}">The Build Dispalays Here</pre>
+            </div>
+            <div class="components">
+                <div>
+                    <input type="text" class="laderNumberInput"  name="laderNumberInput" >
+                </div> Height Of Staircase
+
+                <div>
+                    <input value="Set Stairs" type="submit" class="convertButton"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<Footer>
+    <h2> Thank you </h2>
+    <p>some text might be down here to make it look good</p>
+</Footer>
+<script src="js/script.js"></script>
+</body>
 </body>
 </html>

@@ -1,10 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlsn:th=" https://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Time Converter</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-$END$
+
+<div class="wrapper">
+
+  <h1 id ="logo">
+    <a th:href="@{/}" target="_self"> TechiePlanet</a>
+  </h1>
+  <div class="assess">
+    <h2>
+      Time Converter Assessment
+    </h2>
+
+    <form action="/convert" method="post">
+      <div class="timeText">
+        <label th:text="${actualTime}">Time Shows Here</label>
+      </div>
+      <div class="components">
+        <span>
+          <input type="text" id="hour" class="timeTextBox"  name="hour" > :
+          <input type="text" id="hour" class="timeTextBox" name = "minute" >
+        </span>
+        <div>
+          <span class="Timelabel" >HH</span>
+          <span class="Timelabel" >MM</span>
+        </div>
+        <div>
+          <input value="Display Time" type="submit" class="convertButton"/>
+        </div>
+
+      </div>
+    </form>
+  </div>
+</div>
+<Footer>
+  <h2> Thank you </2>
+  <p>some text might be down here to make it look good</p>
+</Footer>
+<script src="js/script.js"></script>
+</body>
 </body>
 </html>
