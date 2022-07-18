@@ -7,23 +7,26 @@ import java.util.Arrays;
 
 @Component
 public class AddDigits {
+
+    int count, totalSum;
 //    public void getUniqueArray( String [] multiArray) {
 //    }
 
     public String getSum( String digitString ) {
         int sum =0;
         String[] digitChar = digitString.split("");
-        sum = sumUP(digitChar, 0);
+        count =0;
+        totalSum =0;
+        sum = sumUP(digitChar);
         return Integer.toString(sum);
     }
-    int count =0;
+
     // Recursive function to calculate the sum of the digits
-    private int sumUP(String [] sm, int Total) {
-        Total = Total + Integer.parseInt(sm[count]);
+    private int sumUP(String [] sm) {
+        totalSum += Integer.parseInt(sm[count]);
         count++;
-        System.out.println(count);
         if(count != sm.length)
-            sumUP( sm, Total);
-        return Total;
+            sumUP( sm );
+        return totalSum;
     }
 }
