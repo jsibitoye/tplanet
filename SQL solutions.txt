@@ -1,0 +1,10 @@
+SQL. 
+QUESTION 1 : All codes return expected result ( hence query 1 to 5 are valid)
+
+QUESTION 2: select country, games from city c right join games g where c.city = g.name;
+
+QUESTION 3: 
+LEFT JOIN: Returns all records from the left (games) table, and the matched records from the right (city) table. 
+RIGHT JOIN: Returns all records from the right (city) table, and the matched records from the left (games). 
+
+QUESTION 4: select USERID, AVG(duration) from sessions group by userid having count(userId)>1;
